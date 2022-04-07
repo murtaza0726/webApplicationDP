@@ -42,3 +42,4 @@ six==1.16.0
 SQLAlchemy==1.4.32
 sqlparse==0.4.2
 Werkzeug==2.0.3
+whitenoise==6.0.0
