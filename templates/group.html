@@ -1,0 +1,109 @@
+{%load static%}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+
+    <title>Group Page</title>
+</head>
+
+<body id="bg" style="background-image: url('{% static '/myApp/images/pic_4a.jpg'%}');">
+    <div class="main">
+        <div class="containers">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" style="font-family:Times New Roman; font-size:21px;" href="/">BDAT</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" style="font-family:Times New Roman; font-size:21px;" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="font-family:Times New Roman; font-size:21px;" href="/group">Group</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" style="font-family:Times New Roman; font-size:21px;" href="/about">About</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item ml-auto">
+                                <a class="nav-link active" aria-current="page" style="font-family:Times New Roman; font-size:21px;" target='_blank' href="https://www.georgiancollege.ca/">Georgian College</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container"style="margin-top:65px;">
+            <h1 style="font-family:Times New Roman;">Group Information</h1>
+        </div>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card"  style="margin-top:-10px;">
+                        <img src="{% static '/myApp/images/pic_8.jpg' %}" class="card-img-top" alt="A Street in Europe">
+                        <div class="card-body">
+                            <h5 class="card-title">Murtaza Haider Naqvi</h5>
+                            <p class="card-text">An ambivert Electronics and Communication Engineer from India who has spent the last 4.5 years working as a Software Developer. He enjoys seeing new places and trying different foods. Always up for a conversation about theatre and a lover of both mountains and beaches.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card" style="margin-top:-10px;">
+                        <img src="{% static '/myApp/images/pic_9.jpg' %}" class="card-img-top" alt="London">
+                        <div class="card-body">
+                            <h5 class="card-title">Sai Leela</h5>
+                            <p class="card-text">Hilarious Electronics and Communication Engineer with 3.5 years of work experience. She is an extrovert by nature and likes to find similar interests in the people she meets. She loves binge-watching and is very fond of playing badminton.She is committed to eating nutritious foods.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card" style="margin-top:-10px;">
+                        <img src="{% static '/myApp/images/pic_10.jpg' %}" class="card-img-top" alt="New York">
+                        <div class="card-body">
+                            <h5 class="card-title">Kavisha Shah</h5>
+                            <p class="card-text">A socializer who you will never get tired of, a vibrant personality holding a bachelor's in Computer Engineering holding two years of experience as a Business Analyst, full of inspiration, and a pure soul to top it all. Never a no to hike, picnic, a trip. Ohh, and a heads-up: she is a talker!!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <footer class="pt-3 mt-4 footer" >
+        copyrights © 2022 designed by group-3
+    </footer>
+</body>
+
+</html>

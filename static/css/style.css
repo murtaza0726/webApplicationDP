@@ -1,0 +1,48 @@
+#bg {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+#tg {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.box:before{
+    content: '';
+    position: absolute;
+    background: rgba(235, 231, 231, 0.5);
+}
+.row{
+    padding-top:15px;
+}
+.carousel-item{
+    height: 32rem;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    
+}
+.overlay-image{
+    opacity: 0.5;
+}
+
+.navbar-dark{
+    background: rgb(51, 51, 51);
+}
+
+.mt {
+    margin-top: 3.5rem;
+}
+.btn{
+    background-color: rgb(59, 57, 57);
+}
+.pt-3{
+    color: white;
+    background: rgb(51, 51, 51);
+}
+.main{
+    min-height: calc(100vh - 96px);
+}
