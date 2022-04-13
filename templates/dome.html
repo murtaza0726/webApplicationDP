@@ -67,18 +67,18 @@
             const data = {
             labels: labels,
             datasets: [{
+                options:{
+                    title:{
+                        display: true,
+                        text: My chart
+                    }
+                }
                 label: 'Obesity Level',
                 backgroundColor: 'rgb(255, 99, 132)',
                 borderColor: 'rgb(255, 99, 132)',
                 data: {{chartdata|safe}},
             }]
             };
-            options:{
-            title:{
-                display: true,
-                text: My chart
-            }
-        }
             const config = {
                 type: 'bar',
                 data: data,
