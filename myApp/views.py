@@ -13,7 +13,7 @@ def about(request):
     return render(request, 'about.html')
 
 def dome(request):
-    url = 'https://mydbdeployment.herokuapp.com/health'
+    url = 'https://mydbdeployment.herokuapp.com/api/client/v0.1/api/health'
     res = urllib.request.urlopen(url)
     data = json.loads(res.read())
 
