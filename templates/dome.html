@@ -77,6 +77,13 @@
                 type: 'bar',
                 data: data,
                 options: {
+                    title:{
+                        display: true,
+                        text: My chart
+                    },
+                    legend:{
+                        position: bottom
+                    },
                     scales:{
                         x:{
                             grid:{
@@ -95,15 +102,6 @@
                 document.getElementById('myChart'),
                 config
                 );
-            options: {
-                title:{
-                    display: true,
-                    text: My chart
-                },
-                legend:{
-                    position: bottom
-                }
-            }
     </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
