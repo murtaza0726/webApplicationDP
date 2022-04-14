@@ -8,5 +8,6 @@ urlpatterns = [
     path('group', views.group, name="group"),
     path('about', views.about, name="about"),
     path('chart', views.dome, name="dome"),
+    path('graph', views.graph, name="graph"),
     #path('chart', include('project.urls')),
 ]

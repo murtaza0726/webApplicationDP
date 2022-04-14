@@ -23,3 +23,15 @@ def dome(request):
         labels.append(City['City'])
         chartdata.append(City['ObesityLevels_percent'])
     return render(request, 'dome.html', {'data':data, 'labels':labels, 'chartdata':chartdata})
+
+def graph(request):
+    url1 = 'https://mydbdeployment.herokuapp.com/api/client/v0.1/api/health'
+    resp = urllib.request.urlopen(url1)
+    data = json.loads(resp.read())
+
+    labels=[]
+    chartdata=[]
+    for Country in data:
+        labels.append(Country['Country'])
+        chartdata.append(Country['Pollution_Index'])
+    return render(request, 'graph.html', {'data':data, 'labels':labels, 'chartdata':chartdata})

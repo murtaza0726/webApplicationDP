@@ -23,5 +23,6 @@ urlpatterns = [
     path('group', include('myApp.urls')),
     path('about', include('myApp.urls')),
     path('chart', include('myApp.urls')),
+    path('graph', include('myApp.urls')),
     #path('chart', views.dome, name='dome')
 ]
